@@ -11,7 +11,7 @@ final class ParallelStub {
 		PID = String.format("%05d", pid);
 	}
 
-	private static final long millis = 1000;
+	private static final long millis = 2000;
 
 	static void println(String string) {
 		String name = Thread.currentThread().getName();

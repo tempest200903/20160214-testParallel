@@ -106,12 +106,10 @@
        </dependency>
       </dependencies>
       <configuration>
-       <!-- <parallel>all</parallel> -->
-       <!-- <parallel>methods</parallel> -->
        <parallel>classesAndMethods</parallel>
        <threadCount>10</threadCount>
-       <!-- <useUnlimitedThreads>true</useUnlimitedThreads> -->
-       <!-- <threadCountSuites>3</threadCountSuites> -->
+       <forkCount>2</forkCount>
+       <reuseForks>false</reuseForks>
       </configuration>
      </plugin>
     </plugins>
@@ -133,19 +131,16 @@
        </dependency>
       </dependencies>
       <configuration>
-       <!-- <parallel>all</parallel> -->
+       <parallel>all</parallel>
        <!-- <parallel>methods</parallel> -->
-       <!-- <parallel>classesAndMethods</parallel> -->
-       <!-- <threadCount>10</threadCount> -->
-       <!-- <useUnlimitedThreads>true</useUnlimitedThreads> -->
-       <!-- <threadCountSuites>3</threadCountSuites> -->
-       <!-- <useSystemClassLoader>false</useSystemClassLoader> -->
-       <!-- <perCoreThreadCount>false</perCoreThreadCount> -->
-       <!-- <forkCount>2.0C</forkCount> -->
-       <!-- <reuseForks>true</reuseForks> -->
-       <!-- <threadCount>20</threadCount> -->
+       <threadCount>16</threadCount>
+       <threadCountSuites>2</threadCountSuites>
+       <threadCountClasses>3</threadCountClasses>
+       <threadCountMethods>5</threadCountMethods>
+       <forkCount>3</forkCount>
        <reuseForks>false</reuseForks>
-       <forkCount>2.5C</forkCount>
+       <useSystemClassLoader>false</useSystemClassLoader>
+       <perCoreThreadCount>false</perCoreThreadCount>
       </configuration>
      </plugin>
     </plugins>
